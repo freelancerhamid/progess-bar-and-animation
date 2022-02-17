@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.progess-ber{
+    width: 700px;
+    margin: 100px auto;
+
+}
+.progess-ber ul li{
+    width: 700px;
+    height: 30px;
+    border: 2px solid transparent;
+    margin-bottom: 15px;
+    position: relative;
+}
+.progess-ber ul li:first-child{
+    border: 2px solid red;
+}
+
+.progess-ber ul li:first-child::before{
+    content: "";
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: run1 1s linear forwards;
+}
+
+@keyframes run1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+.progess-ber ul li:nth-child(2){
+    border: 2px solid blue;
+}
+
+.progess-ber ul li:nth-child(2)::before{
+    content: "";
+    height: 100%;
+    background: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: run2 2s linear forwards;
+}
+@keyframes run2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+
+.progess-ber ul li:nth-child(3){
+    border: 2px solid gold;
+}
+
+.progess-ber ul li:nth-child(3)::before{
+    content: "";
+    height: 100%;
+    background: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: run3 2s linear forwards;
+}
+
+@keyframes run3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+.progess-ber ul li:nth-child(4){
+    border: 2px solid green;
+}
+.progess-ber ul li:nth-child(4)::before{
+    content: "";
+    height: 100%;
+    background: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: run4 2s linear forwards;
+}
+
+@keyframes run4{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+.progess-ber ul li:last-child{
+    border: 2px solid red;
+}
+.progess-ber ul li:last-child::before{
+    content: "";
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: run5 2s linear forwards;
+}
+@keyframes run5{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+a{
+    display: inline-block;
+    padding: 0 50px;
+    line-height: 50px;
+    background-color: blue;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(248, 19, 19);
+    margin-left: 700px;
+    animation: hartbeat 1s linear infinite;
+    text-decoration: none;
+}
+
+@keyframes hartbeat{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+
+.div{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin: 50px auto;
+    animation-name: golla;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: inherit;
+    
+
+}
+@keyframes golla{
+from{
+   border-radius: 0%;
+   
+}
+to{
+   border-radius: 50%;
+  
+}
+}
+
+
+
+
+
+
+
+
+
+
+
